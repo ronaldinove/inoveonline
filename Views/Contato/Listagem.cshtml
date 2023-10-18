@@ -1,0 +1,32 @@
+@model List<ItemContato>
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Serviço</th>
+                <th>Mensagem</th>
+                <th>Manutenção</th>
+            </tr>
+        </thead>
+
+        @foreach (ItemContato c in Model)
+        {
+            <tr>
+                <td>@c.idContato</td>
+                <td>@c.nome</td>
+                <td>@c.phone</td>
+                <td>@c.email</td>
+                <td>@c.servico</td>
+                <td>@c.mensagem</td>
+                <td>
+                    <a href="/Contato/Editar?idContato=@c.idContato">Editar</a>   <a href="/Contato/Deletar?idContato=@c.idContato">Excluir</a>
+                </td>
+            </tr>
+        }
+
+    </table>

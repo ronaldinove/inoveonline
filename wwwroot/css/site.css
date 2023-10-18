@@ -1,0 +1,234 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  display: flex;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #e00000;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #000000;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-image: url(../img/mesadetrabalho.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nav-item{
+  font-style: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: white;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+/*PERSONALIZAÇÕES*/
+
+.containerMenu{
+    display: flex;
+    flex-wrap: nowrap;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+/*FORMULÁRIO*/
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid rgb(88, 88, 226);
+  background-color: #92c8dab0;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea{
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+.submit-btn{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color:white;
+  background-color: red;
+}
+
+/*OUTRAS PERSONALIZAÇÕES*/
+
+.empresa{
+  text-align: center;
+  border: #012042;
+  padding: 8px;
+  background-color: #92c8dab0;
+  
+}
+
+h2{
+  text-align: center;
+}
+
+.frase{
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+
+.navbar-link {
+  text-decoration-color:  white;
+}
+
+/*CARROSEL*/
+
+.carousel-caption {
+  text-decoration-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+}
+
+.carousel-inner .carousel-item img {
+  image-rendering:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+}
+
+.slide::after {
+  content: attr(title);
+  position: absolute;
+  display: inline-block;
+  bottom: -20px;
+  left: 0;
+}
+
+
+
+/*POP-UP - COOKIES*/
+
+.CookieMessage {
+  position:fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  background: #6d6c6c;
+  z-index: 999;
+  display: none;
+}
+
+.CookieMessage-content {
+  color: white;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px 20px 0 20px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.CookieMessage-content a{
+  color: white;
+}
+
+.CookieMessage-content p{
+  margin: 20px 20px 20px 0;
+}
+
+.CookieMessage-button {
+  background: #00C2FF;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+
+}
+
+.CookieMessage-button:hover{
+  background: #05b0f3;
+}

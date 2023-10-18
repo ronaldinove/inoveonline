@@ -1,0 +1,17 @@
+@model ItemContato
+
+<h2>Edição Cadastro Contatos</h2>
+
+<form method="POST" asp-action="Editar">
+
+    <input type="hidden" asp-for="idContato" required>
+
+    <p>Nome: <input asp-for="nome"></p>
+    <p>Telefone: <input asp-for="phone"></p>
+    <p>E-mail: <input asp-for="email"></p>
+    <p>Serviço: <input asp-for="servico"></p>
+    <p>Mensagem: <input asp-for="mensagem"></p>
+
+    <input type="submit" value="Salvar">
+
+</form>

@@ -1,0 +1,46 @@
+@model ItemContato
+
+@{
+   ViewData["Title"] = "Contate-Nos";
+}
+<h2>@ViewData["Title"] </h2>
+    
+    <p class="frase">Preencha o formulário abaixo e entre em contato conosco:</p>
+          
+    <form method="POST" asp-for="Cadastro" id="formulario">
+        <div>
+            <label asp-for="nome">Seu nome:</label><br>
+            <input type="text" asp-for="nome" id="nome" required><br>
+        </div>
+            
+        <div>
+            <label asp-for="phone">Seu número de whatsapp:</label><br>
+            <input type="tel" asp-for="phone" id="phone" placeholder="55 12345-6789" required><br>
+        </div>
+
+        <div>           
+        <label asp-for="email">Seu e-mail:</label><br>
+        <input type="text" asp-for="email" id="email" required><br>              
+        </div>
+            
+        <div>
+            <label asp-for="servico" id="servico" name="servico">Serviço desejado:</label><br>
+            <select asp-for="servico">
+                <option value="assistencia">Assistência técnica de smartphone</option>
+                <option value="assistencia">Assistência técnica de games</option>
+                <option value="assistencia">Importação de iPhone</option>
+                <option value="assistencia">Outro serviço/assunto</option>  
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="mensagem">Descreva como podemos te ajudar:</label><br>
+            <textarea asp-for="mensagem" class="msg" cols="35" rows="8"></textarea><br>
+        </div>
+        <div>
+            <button type="button" class="btn btn-danger" >Enviar mensagem!</button>    
+        </div> 
+        
+    </form>
+
+<p>@ViewBag.Mensagem</p>
