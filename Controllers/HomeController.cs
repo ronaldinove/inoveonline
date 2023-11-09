@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Atv3._1.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace Atv3._1.Controllers
 {
@@ -28,22 +29,14 @@ namespace Atv3._1.Controllers
             return View();
         }
 
-        public IActionResult Contato()
-        {
-            return View();
-        }
-
         public IActionResult Privacy()
         {
-            //ContatoRepository cR = new ContatoRepository();
-            //cR.testeConexao();
-
             return View();
         }
 
+            
         
-
-        
+               
         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

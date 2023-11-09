@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
@@ -20,7 +22,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1">   
+
+                        @if(Context.Session.GetInt32("user") == null)
+                        {
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Início</a>
                         </li>
@@ -34,17 +39,21 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="">|</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Contato" asp-action="Contato">Contate-Nos</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Contato" asp-action="Cadastro">Contate-Nos</a>
                         </li>
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Contato" asp-action="Listagem">Listagem</a>
-                        </li>
-
                         <li class="nav-item login">
                             <a class="nav-link text-white" asp-area="" asp-controller="Contato" asp-action="Login">Login</a>
                         </li>
+                        } else
+                        {
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Contato" asp-action="Listagem">Listagem</a>
+                        </li>
+                                        
+                        <li class="nav-item logout">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Contato" asp-action="Logout">Sair</a>
+                        </li>
+                        }
                                                 
                     </ul>
                 </div>

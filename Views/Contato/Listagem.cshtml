@@ -1,6 +1,12 @@
-@model List<ItemContato>
+@model List<Contato>
 
-    <table class="table">
+@{
+    ViewData["Title"] = "Listagem de Contatos";
+    string Classe = "";
+}
+
+<div class="lista">
+    <table class="table table-striped">
 
         <thead>
             <tr>
@@ -13,18 +19,29 @@
                 <th>Manutenção</th>
             </tr>
         </thead>
+</div>
 
-        @foreach (ItemContato c in Model)
+        @foreach (Contato c in Model)
         {
-            <tr>
-                <td>@c.idContato</td>
+
+            if (c.Respondido == true)
+            {
+                Classe="text-success";
+            }
+            else
+            {
+                Classe="";
+            }
+
+            <tr class="@Classe">
+                <td>@c.id</td>
                 <td>@c.nome</td>
                 <td>@c.phone</td>
                 <td>@c.email</td>
                 <td>@c.servico</td>
                 <td>@c.mensagem</td>
                 <td>
-                    <a href="/Contato/Editar?idContato=@c.idContato">Editar</a>   <a href="/Contato/Deletar?idContato=@c.idContato">Excluir</a>
+                    <a href="/Contato/Editar?id=@c.id">Editar</a>
                 </td>
             </tr>
         }

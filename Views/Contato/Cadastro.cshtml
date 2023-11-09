@@ -1,29 +1,30 @@
-@model ItemContato
+@model Contato
 
 @{
    ViewData["Title"] = "Contate-Nos";
 }
 <h2>@ViewData["Title"] </h2>
-    
+<div class="jumbotron">
     <p class="frase">Preencha o formulário abaixo e entre em contato conosco:</p>
           
     <form method="POST" asp-for="Cadastro" id="formulario">
-        <div>
+        <input type="hidden" asp-for="id" />
+        <div class="form-group">
             <label asp-for="nome">Seu nome:</label><br>
             <input type="text" asp-for="nome" id="nome" required><br>
         </div>
             
-        <div>
+        <div class="form-group">
             <label asp-for="phone">Seu número de whatsapp:</label><br>
             <input type="tel" asp-for="phone" id="phone" placeholder="55 12345-6789" required><br>
         </div>
 
-        <div>           
+        <div class="form-group">           
         <label asp-for="email">Seu e-mail:</label><br>
         <input type="text" asp-for="email" id="email" required><br>              
         </div>
             
-        <div>
+        <div class="form-group">
             <label asp-for="servico" id="servico" name="servico">Serviço desejado:</label><br>
             <select asp-for="servico">
                 <option value="assistencia">Assistência técnica de smartphone</option>
@@ -33,14 +34,14 @@
             </select>
         </div>
 
-        <div>
-            <label asp-for="mensagem">Descreva como podemos te ajudar:</label><br>
+        <div class="form-group">
+            <label asp-for= "mensagem">Descreva como podemos te ajudar:</label><br>
             <textarea asp-for="mensagem" class="msg" cols="35" rows="8"></textarea><br>
         </div>
         <div>
-            <button type="button" class="btn btn-danger" >Enviar mensagem!</button>    
+            <button type="submit" class="btn btn-primary" >Enviar mensagem!</button>    
         </div> 
         
     </form>
-
+<div>
 <p>@ViewBag.Mensagem</p>

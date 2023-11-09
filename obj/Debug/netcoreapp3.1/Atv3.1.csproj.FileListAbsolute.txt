@@ -54,8 +54,6 @@ C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Atv3
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Atv3.1.Views.dll
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Atv3.1.Views.pdb
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.csprojAssemblyReference.cache
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.AssemblyInfoInputs.cache
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.AssemblyInfo.cs
@@ -66,7 +64,6 @@ C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.TagHelpers.input.cache
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.TagHelpers.output.cache
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.RazorCoreGenerate.cache
-C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Contato.cshtml.g.cs
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Editar.cshtml.g.cs
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Listagem.cshtml.g.cs
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
@@ -87,3 +84,11 @@ C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.pdb
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Atv3.1.genruntimeconfig.cache
 C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Login.cshtml.g.cs
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\Usuario\Downloads\Atv4CarlosMachado\Atv3.1\obj\Debug\netcoreapp3.1\Razor\Views\Contato\Cadastro.cshtml.g.cs

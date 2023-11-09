@@ -2,20 +2,21 @@
     ViewData["Title"] = "Login";
 }
 
-<!--<div class="container">-->
+<div class="login-form">
     <div class="row justify-content-md-center">
-        <div class="jumbotron col-6"/>
+        <div class="jumbotron col-11">
+          <div><h3 class="title-login">Login</h3></div>
             <form  class="login" asp-action="Login" method="POST">
                 <div class="form-group">
-                    <input type="text" placeholder="Login" class="form-control" name="login" />
+                    <input type="text" asp-action="login" placeholder="Login" class="form-control" name="login" />
                 </div>
                 <div class="form-group">
-                    <input type="password" placeholder="Senha" class="form-control" name="senha"/>
+                    <input type="password" asp-action="senha" placeholder="Senha" class="form-control" name="senha"/>
                 </div>
                 <input type="submit" class="btn btn-primary btn-lg" value="Entrar" />
             </form>
             <p class="text-danger">@ViewData["Erro"]</p>
         </div>
     </div>
-<!--</div> -->
-<small>Login disponível somente para administrador do sistema.</small>
+</div>
+<p class="frase">Login disponível somente para administrador do sistema.</p>

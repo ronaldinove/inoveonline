@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +19,9 @@ namespace Atv3._1.Controllers
         {
             _logger = logger;
         }
-        public IActionResult Contato()
+
+        
+        public IActionResult Cadastro()
         {
             return View();
         }
@@ -26,46 +29,52 @@ namespace Atv3._1.Controllers
 
         [HttpPost]
 
-        public IActionResult Contato (ItemContato item)
+        public IActionResult Cadastro (Contato c)
         {
-            ContatoRepository cR = new ContatoRepository();
-            cR.Inserir(item);
+            ContatoService cs = new ContatoService();
+            cs.Inserir(c);
             ViewBag.Mensagem = "Mensagem enviada com sucesso!";
-            return RedirectToAction("Contato");
+            return View();
         }
   
         public IActionResult Listagem()
         {
             Autenticacao.CheckLogin(this);
-            ContatoRepository cR = new ContatoRepository();
-            return View(cR.Listagem());
+            ContatoService cs = new ContatoService();
+            return View(cs.Listar());
         }
 
-        public IActionResult Deletar (int idContato)
+        public IActionResult Deletar (int id)
         {
-            ContatoRepository cR = new ContatoRepository();
-            cR.Deletar(idContato);
+            ContatoService cs = new ContatoService();
+            cs.excluirContato(id);
             return RedirectToAction("Listagem");
         }
 
-        public IActionResult Editar (int idContato)
+        public IActionResult Editar (int id)
         {
-            ContatoRepository cR = new ContatoRepository(); 
-            return View(cR.BuscarPorId(idContato));
+            ContatoService cs = new ContatoService(); 
+            return View(cs.ObterPorId(id));
         }
 
         [HttpPost]
 
-        public IActionResult Editar (ItemContato c)
+        public IActionResult Editar (Contato c)
         {
-            ContatoRepository cR = new ContatoRepository(); 
-            cR.Editar(c);
-            return RedirectToAction("Listagem");//alterado
+            ContatoService cs = new ContatoService(); 
+            cs.Editar(c);
+            return RedirectToAction("Listagem");
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult Login (string login, string senha)
         {
-            if(login != "admin" || senha != "1234")
+            if(login != "admin" || senha != "123")
             {
                 ViewData["Erro"] = "Senha inválida";
                 return View();
@@ -73,11 +82,17 @@ namespace Atv3._1.Controllers
             else
             {
                 HttpContext.Session.SetString("user", "admin");
-                return RedirectToAction("Index");
+                return RedirectToAction("Listagem");
             }
+        }
 
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
         
+
     }
 
 
